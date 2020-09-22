@@ -26,3 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run start
+      env:
+        NODEMAIL_USER: ${{secrets.NODEMAIL_USER}}
+        NODEMAIL_PASS: ${{secrets.NODEMAIL_PASS}}
+        RECEIVER_USER: ${{secrets.RECEIVER_USER}}
