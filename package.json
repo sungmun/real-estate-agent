@@ -1,0 +1,24 @@
+{
+  "name": "real-estate-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "@types/nodemailer": "^6.4.0",
+    "axios": "^0.20.0",
+    "dayjs": "^1.8.36",
+    "global": "^4.4.0",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.11",
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
