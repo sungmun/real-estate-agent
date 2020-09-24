@@ -1,15 +1,18 @@
 import nodeMail from "nodemailer";
+import transport from "nodemailer-smtp-transport";
 import dayjs from "dayjs";
-const transporter = nodeMail.createTransport({
-  service: "gmail",
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.NODEMAIL_USER,
-    pass: process.env.NODEMAIL_PASS,
-  },
-});
+
+const transporter = nodeMail.createTransport(
+  transport({
+    service: "Gmail",
+    port: 465,
+    secure: false,
+    auth: {
+      user: process.env.NODEMAIL_USER,
+      pass: process.env.NODEMAIL_PASS,
+    },
+  })
+);
 export const sendMail = (agent: string, text?: string, html?: string) =>
   transporter.sendMail({
     from: `${agent} <${process.env.NODEMAIL_USER}>`,
