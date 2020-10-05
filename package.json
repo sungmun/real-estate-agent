@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node src/app.ts",
+    "bnr-start": "bnr start"
+  },
+  "betterScripts": {
     "start": "ts-node src/app.ts"
   },
   "keywords": [],
@@ -12,8 +16,8 @@
   "dependencies": {
     "@types/node-fetch": "^2.5.7",
     "@types/nodemailer": "^6.4.0",
-    "@types/nodemailer-smtp-transport": "^2.7.4",
     "axios": "^0.20.0",
+    "better-npm-run": "^0.1.1",
     "dayjs": "^1.8.36",
     "node-fetch": "^2.6.1",
     "nodemailer": "^6.4.11",
