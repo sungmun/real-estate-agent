@@ -28,5 +28,15 @@
     "use_map": "kakao",
     "version": 1,
     "zoom": 3
+  },
+  {
+    "api_version": "3.0.1",
+    "call_type": "web",
+    "filters":{"multi_room_type":[0,1,2],"selling_type":[0],"deposit_range":[0,500],"price_range":[0,50],"trade_range":[0,999999],"maintenance_cost_range":[0,999999],"room_size":[22,999999],"supply_space_range":[0,999999],"room_floor_multi":[3,5,7,6,4,2,0],"division":false,"duplex":false,"room_type":[1,2],"enter_date_range":[0,999999],"parking_average_range":[0,999999],"household_num_range":[0,999999],"parking":false,"animal":false,"short_lease":false,"full_option":false,"built_in":false,"elevator":false,"balcony":false,"loan":false,"safety":false,"pano":false,"deal_type":[0,1],"main_room_type":0,"exclusive_space_range":[0,999999]},
+    "location":[[126.943019,37.4736181],[126.9619876,37.4872916]],
+    "page": 1,
+    "use_map": "kakao",
+    "version": 1,
+    "zoom": 4
   }
 ]
